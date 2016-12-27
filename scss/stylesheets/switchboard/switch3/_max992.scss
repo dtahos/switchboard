@@ -1,0 +1,23 @@
+.#{$parentPrefix}container.#{$parentPrefix}boxed {
+    width: 768px;
+}
+
+h1 {
+    font-size: $relFontSize + 0.5;
+}
+$list: ".#{$prefix}10";
+@for $i from(1 + 1) through 10 {
+    $list: "#{$list}, .#{$prefix}#{$i}0";
+}
+
+#{$list} {
+    width: 100%;
+}
+$list: ".#{$prefix}1D12";
+@for $i from(1 + 1) through 12 {
+    $list: "#{$list}, .#{$prefix}#{$i}D12";
+}
+
+#{$list} {
+    width: 100%;
+}

@@ -1,0 +1,75 @@
+.#{$prefix}menu {
+    ul {
+        @include clearboth;
+    }
+
+    &:not(.#{$prefix}right) ul > li > ul {
+        left: 0;
+    }
+
+    &.#{$prefix}center {
+        font-size: 0;
+
+        ul {
+            display: inline-block;
+            font-size: 1rem;
+        }
+    }
+
+    > ul {
+        > li {
+            float: left;
+            position: relative;
+            z-index: 9;
+        }
+    }
+
+    ul {
+        > li {
+            > ul {
+                position: absolute;
+                top: 100%;
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+
+        > li:hover > ul {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    & > ul li:hover {
+        position: relative;
+    }
+
+    &.#{$prefix}right ul {
+        > li {
+            > ul {
+                left: auto;
+                right: 0;
+            }
+        }
+
+        > li {
+            &:last-child {
+                > ul {
+                    ul {
+                        top: 0!important;
+                        right: 100%!important;
+                    }
+                }
+            }
+
+            &:not(:last-child) {
+                > ul {
+                    ul {
+                        top: 0!important;
+                        left: 100%!important;
+                    }
+                }
+            }
+        }
+    }
+}

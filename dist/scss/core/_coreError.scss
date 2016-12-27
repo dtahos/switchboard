@@ -1,0 +1,19 @@
+// Core Error
+@mixin getError($file,$message) {
+    $error: "Error: @#{$file}, #{$message}";
+    @at-root body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        & > * {
+            display: none;
+        }
+        &:after {
+            content: $error;
+            @include makePosition(fixed);
+            @include makePanel();
+            z-index: 999999999999999;
+        }
+    }
+}

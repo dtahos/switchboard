@@ -1,0 +1,15 @@
+.#{$prefix}button {
+    color: inherit;
+    background: $buttonbackground;
+    border: $buttonborder;
+    border-radius: 2px;
+    padding: 0 25px;
+    line-height: 2.5;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    &:hover{
+        border-color: darken(white,5%);
+        background: darken($buttonbackground, 10%);
+    }
+}

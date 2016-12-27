@@ -1,0 +1,11 @@
+ img.#{$prefix}smooth {
+     opacity: 0;
+     -webkit-transition-property: opacity;
+     transition-property: opacity;
+     -webkit-transition-duration: 1s;
+     transition-duration: 1s;
+ }
+ 
+ img.#{$prefix}smooth.#{$prefix}loaded {
+     opacity: 1;
+ }

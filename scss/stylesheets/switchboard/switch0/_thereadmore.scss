@@ -1,0 +1,15 @@
+.#{$prefix}reveal {
+    display: none;
+}
+
+.#{$prefix}revealbutton .#{$prefix}close {
+    display: none;
+}
+
+.#{$prefix}revealbutton.#{$prefix}opened .#{$prefix}open {
+    display: none;
+}
+
+.#{$prefix}revealbutton.#{$prefix}opened .#{$prefix}close {
+    display: block;
+}

@@ -1,0 +1,57 @@
+$REDSALSA: #F03A47;
+$OUTERSPACE: #424B54;
+$ORANGEYELLOW: #FFD166;
+$BRILLIANTAZURE: #3292FF;
+$CARIBBEANGREEN: #06D6A0;
+
+& {
+    position: relative;
+}
+
+* {
+    border: solid 2px;
+}
+
+&::before {
+    content: 'DOCUMENT START';
+    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 17px;
+    z-index: 9999;
+}
+
+&::after {
+    content: 'DOCUMENT END';
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    left: 17px;
+    z-index: 9999;
+}
+
+div {
+    background-color: $BRILLIANTAZURE;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    background-color: $REDSALSA;
+}
+
+.#{$parentPrefix}container {
+    border-color: $OUTERSPACE;
+}
+
+.#{$parentPrefix}row {
+    border-color: $REDSALSA;
+}
+
+*:hover {
+    border-color: $ORANGEYELLOW!important;
+}

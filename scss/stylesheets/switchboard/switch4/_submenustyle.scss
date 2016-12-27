@@ -1,0 +1,14 @@
+.#{$prefix}menu {
+    ul > li > ul {
+        min-width: 200px;
+    }
+    ul > li > ul > li > a {
+        line-height: 20px;
+        padding: 15px;
+        background: white;
+    }
+    ul > li > ul > li > a:hover {
+        background: #3498db;
+        color: white;
+    }
+}

@@ -1,0 +1,20 @@
+// Positions
+@mixin makePosition($position:absolute,$top:null,$left:null,$bottom:null,$right:null,$margin:false,$fullscreen:false) {
+    position: $position;
+    @if $position == absolute or $position == relative or $position == fixed {
+         @if $top == null or $left == null or $bottom == null or $right == null{
+            $fullscreen: true;
+        }
+        top: if($fullscreen, 0 ,$top);
+        left: if($fullscreen, 0, $left);
+        bottom: if($fullscreen, 0, $bottom);
+        right: if($fullscreen, 0, $right);
+    }
+    @if $fullscreen {
+        width: 100%;
+        height: 100%;
+    }
+    @if $margin {
+        margin: auto;
+    }
+}

@@ -1,0 +1,60 @@
+// 100 grid
+@mixin grid-100($i:1, $list: ".#{$prefix}#{$i}0") {
+     @for $i from(1 + 1) through 10{
+        $list: "#{$list}, .#{$prefix}#{$i}0";
+        // TEMP FIX
+        @if($i == 2) {
+            .#{$prefix}10 {
+                width: 10%;
+            }
+        }
+
+        .#{$prefix}#{$i}0 {
+            width: (10% * $i);
+        }
+    }
+
+    #{$list} {
+        position: relative;
+        min-height: 1px;
+        padding: 17px $containerPadding;
+    }
+
+    .switch-1 {
+        #{$list} {
+            border-color: #ecf0f1;
+        }
+    }
+}
+// d12 grid
+@mixin grid-12($i:1, $list: ".#{$prefix}#{$i}d12") {
+     @for $i from(1 + 1) through 12{
+        $list: "#{$list}, .#{$prefix}#{$i}d12";
+        // TEMP FIX
+        @if($i == 2) {
+            .#{$prefix}1d12 {
+                width: (100% / (12 / 1 ));
+            }
+        }
+
+        .#{$prefix}#{$i}d12 {
+            width: (100% / (12 / $i ));
+        }
+    }
+
+    #{$list} {
+        @extend .#{$prefix}left;
+    }
+
+    #{$list} {
+        position: relative;
+        min-height: 1px;
+        padding: 17px $containerPadding;
+    }
+
+    .switch-1 {
+        #{$list} {
+            border-color: #ecf0f1;
+        }
+    }
+}

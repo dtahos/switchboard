@@ -1,0 +1,11 @@
+/**
+* Fullscreen switch (switch2) :
+*/
+
+.switch2 {
+    .#{$parentPrefix}header {}
+    .#{$prefix}imager {
+        width: 100%;
+        height: 100%;
+    }
+}

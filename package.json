@@ -1,0 +1,22 @@
+{
+    "name": "switchboard.css",
+    "version": "0.0.5",
+    "description": "switchboard css framework",
+    "repository": {
+        "type": "local",
+        "url": ""
+    },
+    "devDependencies": {
+        "gulp": "*",
+        "gulp-autoprefixer": "*",
+        "gulp-load-plugins": "^1.3.0",
+        "gulp-plumber": "*",
+        "gulp-rename": "*",
+        "gulp-sass": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-uglify": "*",
+        "gulp-clean-css": "*",
+        "gulp-concat": "*"
+    },
+    "license": "GPL-3.0"
+}

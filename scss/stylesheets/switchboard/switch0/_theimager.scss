@@ -1,0 +1,37 @@
+.#{$prefix}imager {
+    .#{$prefix}image-overlay{
+        @include absolute-full;
+    }
+    .#{$prefix}theimage {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+    position: relative;
+    .#{$prefix}content{
+        width:100%;
+    }
+    .#{$prefix}description {
+        @extend .#{$prefix}image-overlay;
+        @include flex;
+    }
+    .#{$prefix}description:not(.#{$prefix}left):not(.#{$prefix}right) {
+        @include justify-content-center;
+    }
+    .#{$prefix}description.#{$prefix}left {
+        @include justify-content-left;
+    }
+    .#{$prefix}description.#{$prefix}right {
+        @include justify-content-right;
+    }
+    .#{$prefix}description:not(.#{$prefix}top):not(.#{$prefix}bottom) {
+        @include align-items-center;
+    }
+    .#{$prefix}description.#{$prefix}top {
+        @include align-items-top;
+    }
+    .#{$prefix}description.#{$prefix}bottom {
+        @include align-items-bottom;
+    }
+}

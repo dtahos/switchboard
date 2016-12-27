@@ -1,0 +1,15 @@
+/**
+* Responsive switch (switch3) :
+*/
+@media (max-width: 1440px + $containerPadding *8) {
+     @import'max1440';
+}
+@media (max-width: 1200px + $containerPadding *8) {
+     @import'max1200';
+}
+@media (max-width: 992px + $containerPadding *8) {
+     @import'max992';
+}
+@media (max-width: 768px + $containerPadding *8) {
+     @import'max768';
+}

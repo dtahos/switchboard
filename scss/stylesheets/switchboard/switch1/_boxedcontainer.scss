@@ -1,0 +1,6 @@
+.#{$parentPrefix}container {
+     &.#{$parentPrefix}boxed{
+         width: 1440px;
+         padding: 0 $containerPadding;
+     }
+ }

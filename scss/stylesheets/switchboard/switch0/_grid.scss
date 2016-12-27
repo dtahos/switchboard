@@ -1,0 +1,78 @@
+//columns
+
+.#{$prefix}inner {
+    padding-left: $containerPadding;
+    padding-right: $containerPadding;
+}
+
+.#{$prefix}innerpost {
+    margin-top: 50px;
+}
+//container
+
+.#{$parentPrefix}container {
+    padding-left: $containerPadding;
+    padding-right: $containerPadding;
+    margin: auto;
+}
+
+.#{$parentPrefix}row {
+    position: relative;
+    margin-left: (-$containerPadding);
+    margin-right: (-$containerPadding);
+}
+
+.#{$prefix}col {
+    padding-left: $containerPadding;
+    padding-right: $containerPadding;
+}
+//soak
+
+.#{$prefix}soak,
+.#{$prefix}soak-left,
+.#{$prefix}soak-right {
+    position: relative;
+}
+
+.#{$prefix}soak {
+    margin: auto;
+}
+
+.#{$prefix}soak-left {
+    text-align: left;
+}
+
+.#{$prefix}soak-right {
+    text-align: right;
+}
+//i-center
+
+.#{$prefix}i-center {
+    display: inline-block;
+    vertical-align: middle;
+}
+//floats
+
+.#{$prefix}left {
+    float: left;
+    display: block;
+}
+
+.#{$prefix}right {
+    float: right;
+    display: block;
+}
+
+.#{$parentPrefix}container {
+    @include clearboth;
+}
+
+.#{$parentPrefix}row {
+    @include clearboth;
+}
+
+.#{$prefix}clear {
+    @include clearboth;
+}
+@include grid-100;
+@include grid-12;

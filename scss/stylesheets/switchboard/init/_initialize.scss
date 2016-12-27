@@ -1,0 +1,79 @@
+/**
+ * Switchboard Init
+ */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    word-wrap: break-word;
+    outline: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: $fontSize;
+    min-height: 100%;
+    line-height: $lineHeight;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+article:not(:first-child) {
+    margin-top: 3em;
+}
+
+.#{$prefix}SOFTLOAD {
+    opacity: 0;
+    transition: 1s;
+}
+
+.#{$prefix}READY {
+    opacity: 1;
+}
+
+.#{$prefix}hide {
+    display: none;
+}
+
+.#{$parentPrefix}wrapper {
+    position: relative;
+    min-height: 100%;
+}
