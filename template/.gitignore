@@ -1,0 +1,8 @@
+.htaccess
+gulpfile.js
+package.json
+img/*
+js/*
+css/*
+node_modules/*
+vendors/*
