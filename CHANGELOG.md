@@ -2,6 +2,7 @@
 
 #0.5
 * new class prefix
+* changes of typography in switch0
 
 # 0.0.5
 * Fixed issue with img tag

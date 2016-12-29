@@ -8,7 +8,7 @@
     <title>Switchboard Tester</title>
     <link rel="stylesheet" href="../dist/css/switchboard.min.css">
     <style>
-        [class*=D12],
+        [class*=d12],
         ._left {
             padding-top: 10px;
             padding-bottom: 10px;
@@ -17,28 +17,42 @@
             border: 1px solid #ddd;
             border: 1px solid rgba(86, 61, 124, .2);
         }
-        .show-grid { margin-bottom: 15px; }
 
-        
+        .show-grid {
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 
 <body>
-        <div class="__container __boxed">
-            <div class="__row show-grid">
-                <div class="_12D12">
+    <section id="grid">
+        <div class="sb--container sb--boxed">
+            <div class="sb--row show-grid">
+                <div class="sb-12d12">
                     Level 1: .col-sm-9
-                    <div class="__row show-grid">
-                        <div class="_6D12">
+                    <div class="sb--row show-grid">
+                        <div class="sb-6d12">
                             Level 2: .col-xs-8 .col-sm-6
                         </div>
-                        <div class="_6D12">
+                        <div class="sb-6d12">
                             Level 2: .col-xs-4 .col-sm-6
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="typography">
+        <div class="sb--container sb--boxed">
+            <div class="sb--row">
+                <div class="sb-4d12 sb-typo-left sb-typo-light">Left - Light</div>
+                <div class="sb-4d12 sb-typo-center sb-typo-medium">Center - Medium</div>
+                <div class="sb-4d12 sb-typo-right sb-typo-bold">Right - Bold</div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="../dist/js/switchboard.min.js"></script>

@@ -1,23 +1,33 @@
-.#{$prefix}typoLeft {
+// Typo Prefix
+$typoprefix: 'typo-';
+
+// Alignment
+.#{$prefix + $typoprefix}left {
     text-align: left;
 }
 
-.#{$prefix}typoCenter {
+.#{$prefix + $typoprefix}center {
     text-align: center;
 }
 
-.#{$prefix}typoRight {
+.#{$prefix + $typoprefix}right {
     text-align: right;
 }
 
-.#{$prefix}typoJustify {
+.#{$prefix + $typoprefix}justify {
     text-align: justify;
 }
 
-.#{$prefix}typoLight {
+// Font Weight
+
+.#{$prefix + $typoprefix}light {
     font-weight: 100;
 }
 
-.#{$prefix}typoBold {
-    font-weight: 800;
+.#{$prefix + $typoprefix}medium {
+    font-weight: 400;
+}
+
+.#{$prefix + $typoprefix}bold {
+    font-weight: 700;
 }
