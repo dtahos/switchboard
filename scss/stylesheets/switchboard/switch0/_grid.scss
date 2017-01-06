@@ -1,3 +1,7 @@
+//
+// Switchboard Grid
+// --------------------------------------------------
+
 //columns
 
 .#{$prefix}inner {
@@ -28,23 +32,11 @@
 }
 //soak
 
-.#{$prefix}soak,
-.#{$prefix}soak-left,
-.#{$prefix}soak-right {
-    position: relative;
-}
-
 .#{$prefix}soak {
+    position: relative;
     margin: auto;
 }
 
-.#{$prefix}soak-left {
-    text-align: left;
-}
-
-.#{$prefix}soak-right {
-    text-align: right;
-}
 //i-center
 
 .#{$prefix}i-center {

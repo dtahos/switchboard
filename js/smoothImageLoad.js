@@ -7,9 +7,9 @@
 
         var that = $(this);
 
-        if (that.hasClass('.s-smooth')) {
+        if (that.hasClass('.sb-smooth')) {
             that.load(function() {
-                that.addClass('.s-loaded');
+                that.addClass('.sb-loaded');
             });
         }
 

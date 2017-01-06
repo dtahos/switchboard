@@ -1,5 +1,10 @@
-//
 // SWITCHBOARD PREFIX
-//
 $parentPrefix: 'sb--';
 $prefix: 'sb-';
+
+// Variables
+@import 'variables';
+// Mixins
+@import 'mixins';
+// Switchgear
+@import 'switchgear/switchgear';

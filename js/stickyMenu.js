@@ -8,10 +8,10 @@
     mode = 'normal';
 
     function stickyMenu(mode) {
-        var header = $('.s--header'),
+        var header = $('.sb--header'),
             nav = header.scrollTop() + header.height(),
             elementClass = '',
-            stuckClass = '.s-stuck';
+            stuckClass = '.sb-stuck';
 
         if (header.data('element-class') !== undefined) {
             elementClass = $('.' + header.data('element-class'));

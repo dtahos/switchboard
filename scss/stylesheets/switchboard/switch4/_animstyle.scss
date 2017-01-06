@@ -1,8 +1,6 @@
-.#{$prefix}anim{
-    opacity:0;
-    transition: opacity 1s;
-    &.#{$prefix}animtrig{
-        &.#{$prefix}fade{
+.#{$prefix}anim {
+    &.#{$prefix}animtrig {
+        &.#{$prefix}fade {
             opacity: 1;
         }
     }

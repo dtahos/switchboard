@@ -1,8 +1,11 @@
 # Changelog
 
 #0.5
-* new class prefix
-* changes of typography in switch0
+* New class prefix
+* Changes of typography in switch0
+* Fixed switch3 responsive d12 grid issue
+* Switchgear is now part of switchboard core
+* Imported Bootstrap's tables component
 
 # 0.0.5
 * Fixed issue with img tag

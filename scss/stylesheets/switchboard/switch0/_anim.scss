@@ -1,0 +1,6 @@
+.#{$prefix}anim {
+    opacity: 0;
+    &.#{$prefix}animtrig {
+        opacity: 1;
+    }
+}

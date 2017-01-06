@@ -32,11 +32,11 @@ if (typeof jQuery === 'undefined') {
     }
 
     function anim() {
-        $('.s-anim').each(function() {
+        $('.sb-anim').each(function() {
             if (isScrolledIntoView(this) === true) {
-                $(this).addClass('.s-animtrig')
+                $(this).addClass('sb-animtrig')
             } else {
-                $(this).removeClass('.s-animtrig')
+                $(this).removeClass('sb-animtrig')
             }
         });
     }
@@ -52,15 +52,18 @@ if (typeof jQuery === 'undefined') {
 /* ========================================================================
  * Switchboard: Empty Space
  * ========================================================================*/
-+ function($) {
+ + function($) {
 
-    var emptyspace = $('.s-emptyspace');
+     var emptySpace = $('._emptyspace');
 
-    emptyspace.each(function() {
-        $(this).css('height', $(this).data('height'));
-    });
+     emptySpace.each(function() {
+         var thisEs = $(this),
+             esHeight = thisEs.data('height');
 
-}(jQuery);
+         $(this).css('height', esHeight);
+     });
+
+ }(jQuery);
 
 /* ========================================================================
  * Switchboard: Hashtag Links
@@ -75,8 +78,7 @@ if (typeof jQuery === 'undefined') {
                 $('html, body').animate({
                     scrollTop: target.offset().top
                 }, {
-                    duration: 300,
-                    easing: 'swing'
+                    duration: 300
                 });
                 return false;
             }
@@ -90,10 +92,10 @@ if (typeof jQuery === 'undefined') {
  * ========================================================================*/
 + function($) {
 
-    $('.s-revealbutton').click(function(e) {
+    $('.sb-revealbutton').click(function(e) {
         e.preventDefault();
-        $(this).toggleClass('.s-opened');
-        $(this).siblings('.s-reveal').slideToggle("fast");
+        $(this).toggleClass('.sb-opened');
+        $(this).siblings('.sb-reveal').slideToggle("fast");
     });
 
 }(jQuery);
@@ -107,9 +109,9 @@ if (typeof jQuery === 'undefined') {
 
         var that = $(this);
 
-        if (that.hasClass('.s-smooth')) {
+        if (that.hasClass('.sb-smooth')) {
             that.load(function() {
-                that.addClass('.s-loaded');
+                that.addClass('.sb-loaded');
             });
         }
 
@@ -140,10 +142,10 @@ if (typeof jQuery === 'undefined') {
     mode = 'normal';
 
     function stickyMenu(mode) {
-        var header = $('.s--header'),
+        var header = $('.sb--header'),
             nav = header.scrollTop() + header.height(),
             elementClass = '',
-            stuckClass = '.s-stuck';
+            stuckClass = '.sb-stuck';
 
         if (header.data('element-class') !== undefined) {
             elementClass = $('.' + header.data('element-class'));
@@ -189,29 +191,29 @@ if (typeof jQuery === 'undefined') {
 + function($) {
 
     function theImager() {
-        var theImage = $('.s-theimage'),
+        var theImage = $('.sb-theimage'),
             theImagelink = theImage.data('image');
         theImagersize();
         if (theImage.length) {
             if (theImagelink !== undefined) {
                 theImage.css('background-image', 'url("' + theImagelink + '")');
             } else {
-                console.error('Url of image in the .s-IMAGER is not defined!');
+                console.error('Url of image in the .sb-IMAGER is not defined!');
             }
         } else {
-            console.error('There is no .s-image element');
+            console.error('There is no .sb-image element');
         }
     }
 
     function theImagersize() {
-        var header = $('.s--header'),
-            theImage = $('.s-theimage'),
-            theImager = $('.s-imager'),
+        var header = $('.sb--header'),
+            theImage = $('.sb-theimage'),
+            theImager = $('.sb-imager'),
             theImageHeight = theImage.data('height'),
             imagerHeight = $(window).height(),
             percentageHeight = 100;
 
-        if (!header.hasClass('.s-absolute') && !header.hasClass('.s-fixed'))
+        if (!header.hasClass('.sb-absolute') && !header.hasClass('.sb-fixed'))
             imagerHeight -= header.height();
 
         if (theImageHeight !== undefined)
@@ -220,7 +222,7 @@ if (typeof jQuery === 'undefined') {
         theImager.css('height', (imagerHeight * percentageHeight) / 100);
     }
 
-    if ($(".s-imager").length)
+    if ($(".sb-imager").length)
         theImager();
 
     $(window).resize(theImagersize);

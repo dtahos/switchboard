@@ -1,12 +1,15 @@
 /* ========================================================================
  * Switchboard: Empty Space
  * ========================================================================*/
-+ function($) {
+ + function($) {
 
-    var emptyspace = $('.s-emptyspace');
+     var emptySpace = $('._emptyspace');
 
-    emptyspace.each(function() {
-        $(this).css('height', $(this).data('height'));
-    });
+     emptySpace.each(function() {
+         var thisEs = $(this),
+             esHeight = thisEs.data('height');
 
-}(jQuery);
+         $(this).css('height', esHeight);
+     });
+
+ }(jQuery);

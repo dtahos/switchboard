@@ -1,0 +1,10 @@
+//Background Image
+@mixin makeBackgroundImage($position:"center",$size:"100%",$repeat:"no-repeat",$url:false) {
+     @if $url == true{
+        background-image: url("#{$url}");
+    }
+
+    background-position: #{$position};
+    background-size: #{$size};
+    background-repeat: #{$repeat};
+}

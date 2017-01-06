@@ -69,7 +69,7 @@ gulp.task('sassteststyles', function() {
 });
 
 gulp.task('switchgear', function() {
-  return gulp.src('switchgear/**/_*.scss')
+  return gulp.src('scss/stylesheets/switchboard/includes/switchgear/**/_*.scss')
   .pipe(gulp.dest('dist/scss'));
 });
 
@@ -77,7 +77,7 @@ gulp.task('watch', function() {
     gulp.watch(jsAssets, ['scripts']);
     gulp.watch('scss/stylesheets/**/*.scss', ['styles']);
     gulp.watch('dist/sass/**/*.scss', ['sassteststyles']);
-    gulp.watch('switchgear/**/_*.scss',['switchgear']);
+    gulp.watch('scss/stylesheets/switchboard/includes/switchgear/**/_*.scss',['switchgear']);
 });
 
 gulp.task('default', ['styles', 'sassteststyles', 'scripts', 'switchgear', 'watch']);

@@ -11,8 +11,7 @@
                 $('html, body').animate({
                     scrollTop: target.offset().top
                 }, {
-                    duration: 300,
-                    easing: 'swing'
+                    duration: 300
                 });
                 return false;
             }

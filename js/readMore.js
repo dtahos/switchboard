@@ -3,10 +3,10 @@
  * ========================================================================*/
 + function($) {
 
-    $('.s-revealbutton').click(function(e) {
+    $('.sb-revealbutton').click(function(e) {
         e.preventDefault();
-        $(this).toggleClass('.s-opened');
-        $(this).siblings('.s-reveal').slideToggle("fast");
+        $(this).toggleClass('.sb-opened');
+        $(this).siblings('.sb-reveal').slideToggle("fast");
     });
 
 }(jQuery);

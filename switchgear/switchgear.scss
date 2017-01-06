@@ -1,5 +1,0 @@
-@import 'switchgear';
-@include switchgear();
-body {
-    @include makeTransition(opacity,1s);
-}

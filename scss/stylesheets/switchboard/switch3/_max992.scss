@@ -13,9 +13,9 @@ $list: ".#{$prefix}10";
 #{$list} {
     width: 100%;
 }
-$list: ".#{$prefix}1D12";
+$list: ".#{$prefix}1d12";
 @for $i from(1 + 1) through 12 {
-    $list: "#{$list}, .#{$prefix}#{$i}D12";
+    $list: "#{$list}, .#{$prefix}#{$i}d12";
 }
 
 #{$list} {

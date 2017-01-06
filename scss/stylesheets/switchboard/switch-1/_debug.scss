@@ -1,17 +1,21 @@
+// Color palette for debug.
 $REDSALSA: #F03A47;
 $OUTERSPACE: #424B54;
 $ORANGEYELLOW: #FFD166;
 $BRILLIANTAZURE: #3292FF;
 $CARIBBEANGREEN: #06D6A0;
 
+// Sets .switch-1 to position relative.
 & {
     position: relative;
 }
 
+// Borders around all elements.
 * {
     border: solid 2px;
 }
 
+// Annotation to where your Document starts.
 &::before {
     content: 'DOCUMENT START';
     font-weight: 900;
@@ -21,6 +25,7 @@ $CARIBBEANGREEN: #06D6A0;
     z-index: 9999;
 }
 
+// And where it ends.
 &::after {
     content: 'DOCUMENT END';
     font-weight: 900;
@@ -30,6 +35,7 @@ $CARIBBEANGREEN: #06D6A0;
     z-index: 9999;
 }
 
+// Setting the debug
 div {
     background-color: $BRILLIANTAZURE;
 }
@@ -51,7 +57,6 @@ p {
 .#{$parentPrefix}row {
     border-color: $REDSALSA;
 }
-
 *:hover {
     border-color: $ORANGEYELLOW!important;
 }

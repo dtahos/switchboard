@@ -1,12 +1,11 @@
+// MENU
 .#{$prefix}menu {
     & > ul > li > a {
         line-height: 3em;
         padding: 0 10px;
         display: block;
-
         &:hover {}
     }
-
     & > ul > li:first-child > a {
         padding-left: 0;
     }
@@ -14,7 +13,6 @@
     ul li a .#{$prefix}underline {
         line-height: 50px;
         position: relative;
-
         &:after {
             content: '';
             display: block;
@@ -27,11 +25,9 @@
             opacity: 0;
         }
     }
-
     & a:hover .#{$prefix}underline:after {
         opacity: 1;
     }
-
     ul li:last-child {
         margin-right: 0;
     }
@@ -44,5 +40,21 @@
         right: 0;
         z-index: 999;
         background: white;
+    }
+}
+
+// SUBMENU
+.#{$prefix}menu {
+    ul > li > ul {
+        min-width: 200px;
+    }
+    ul > li > ul > li > a {
+        line-height: 20px;
+        padding: 15px;
+        background: white;
+    }
+    ul > li > ul > li > a:hover {
+        background: #3498db;
+        color: white;
     }
 }

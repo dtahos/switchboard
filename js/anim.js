@@ -21,11 +21,11 @@
     }
 
     function anim() {
-        $('.s-anim').each(function() {
+        $('.sb-anim').each(function() {
             if (isScrolledIntoView(this) === true) {
-                $(this).addClass('.s-animtrig')
+                $(this).addClass('sb-animtrig')
             } else {
-                $(this).removeClass('.s-animtrig')
+                $(this).removeClass('sb-animtrig')
             }
         });
     }
