@@ -5,3 +5,11 @@
 h1 {
     font-size: $relFontSize;
 }
+$list: ".#{$prefix}1d12-small,.#{$prefix}1d12-medium,.#{$prefix}1d12-large";
+@for $i from(1 + 1) through 12 {
+    $list: "#{$list}, .#{$prefix}#{$i}d12-small,.#{$prefix}#{$i}d12-medium,.#{$prefix}#{$i}d12-large";
+}
+
+#{$list} {
+    width: 100%;
+}

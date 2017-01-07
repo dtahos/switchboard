@@ -1,3 +1,12 @@
+/*!
+ * Switchboard v0.5
+ * Licensed under GNU GENERAL PUBLIC LICENSE VERSION 3, 29 June 2007
+ * ============================================================================
+ * Tables component from Bootstrap
+ * Bootstrap v3.3.7 (http://getbootstrap.com)
+ * Copyright 2011-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -445,13 +454,13 @@ article:not(:first-child) {
   display: flex;
 }
 
-.sb-imager .sb-description:not(.sb-left):not(.sb-1d12):not(.sb-2d12):not(.sb-3d12):not(.sb-4d12):not(.sb-5d12):not(.sb-6d12):not(.sb-7d12):not(.sb-8d12):not(.sb-9d12):not(.sb-10d12):not(.sb-11d12):not(.sb-12d12):not(.sb-right) {
+.sb-imager .sb-description:not(.sb-left):not(.sb-1d12):not(.sb-1d12-large):not(.sb-1d12-medium):not(.sb-1d12-small):not(.sb-2d12):not(.sb-2d12-large):not(.sb-2d12-medium):not(.sb-2d12-small):not(.sb-3d12):not(.sb-3d12-large):not(.sb-3d12-medium):not(.sb-3d12-small):not(.sb-4d12):not(.sb-4d12-large):not(.sb-4d12-medium):not(.sb-4d12-small):not(.sb-5d12):not(.sb-5d12-large):not(.sb-5d12-medium):not(.sb-5d12-small):not(.sb-6d12):not(.sb-6d12-large):not(.sb-6d12-medium):not(.sb-6d12-small):not(.sb-7d12):not(.sb-7d12-large):not(.sb-7d12-medium):not(.sb-7d12-small):not(.sb-8d12):not(.sb-8d12-large):not(.sb-8d12-medium):not(.sb-8d12-small):not(.sb-9d12):not(.sb-9d12-large):not(.sb-9d12-medium):not(.sb-9d12-small):not(.sb-10d12):not(.sb-10d12-large):not(.sb-10d12-medium):not(.sb-10d12-small):not(.sb-11d12):not(.sb-11d12-large):not(.sb-11d12-medium):not(.sb-11d12-small):not(.sb-12d12):not(.sb-12d12-large):not(.sb-12d12-medium):not(.sb-12d12-small):not(.sb-right) {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-.sb-imager .sb-description.sb-left, .sb-imager .sb-description.sb-1d12, .sb-imager .sb-description.sb-2d12, .sb-imager .sb-description.sb-3d12, .sb-imager .sb-description.sb-4d12, .sb-imager .sb-description.sb-5d12, .sb-imager .sb-description.sb-6d12, .sb-imager .sb-description.sb-7d12, .sb-imager .sb-description.sb-8d12, .sb-imager .sb-description.sb-9d12, .sb-imager .sb-description.sb-10d12, .sb-imager .sb-description.sb-11d12, .sb-imager .sb-description.sb-12d12 {
+.sb-imager .sb-description.sb-left, .sb-imager .sb-description.sb-1d12, .sb-imager .sb-description.sb-1d12-large, .sb-imager .sb-description.sb-1d12-medium, .sb-imager .sb-description.sb-1d12-small, .sb-imager .sb-description.sb-2d12, .sb-imager .sb-description.sb-2d12-large, .sb-imager .sb-description.sb-2d12-medium, .sb-imager .sb-description.sb-2d12-small, .sb-imager .sb-description.sb-3d12, .sb-imager .sb-description.sb-3d12-large, .sb-imager .sb-description.sb-3d12-medium, .sb-imager .sb-description.sb-3d12-small, .sb-imager .sb-description.sb-4d12, .sb-imager .sb-description.sb-4d12-large, .sb-imager .sb-description.sb-4d12-medium, .sb-imager .sb-description.sb-4d12-small, .sb-imager .sb-description.sb-5d12, .sb-imager .sb-description.sb-5d12-large, .sb-imager .sb-description.sb-5d12-medium, .sb-imager .sb-description.sb-5d12-small, .sb-imager .sb-description.sb-6d12, .sb-imager .sb-description.sb-6d12-large, .sb-imager .sb-description.sb-6d12-medium, .sb-imager .sb-description.sb-6d12-small, .sb-imager .sb-description.sb-7d12, .sb-imager .sb-description.sb-7d12-large, .sb-imager .sb-description.sb-7d12-medium, .sb-imager .sb-description.sb-7d12-small, .sb-imager .sb-description.sb-8d12, .sb-imager .sb-description.sb-8d12-large, .sb-imager .sb-description.sb-8d12-medium, .sb-imager .sb-description.sb-8d12-small, .sb-imager .sb-description.sb-9d12, .sb-imager .sb-description.sb-9d12-large, .sb-imager .sb-description.sb-9d12-medium, .sb-imager .sb-description.sb-9d12-small, .sb-imager .sb-description.sb-10d12, .sb-imager .sb-description.sb-10d12-large, .sb-imager .sb-description.sb-10d12-medium, .sb-imager .sb-description.sb-10d12-small, .sb-imager .sb-description.sb-11d12, .sb-imager .sb-description.sb-11d12-large, .sb-imager .sb-description.sb-11d12-medium, .sb-imager .sb-description.sb-11d12-small, .sb-imager .sb-description.sb-12d12, .sb-imager .sb-description.sb-12d12-large, .sb-imager .sb-description.sb-12d12-medium, .sb-imager .sb-description.sb-12d12-small {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -520,7 +529,7 @@ article:not(:first-child) {
   vertical-align: middle;
 }
 
-.sb-left, .sb-1d12, .sb-2d12, .sb-3d12, .sb-4d12, .sb-5d12, .sb-6d12, .sb-7d12, .sb-8d12, .sb-9d12, .sb-10d12, .sb-11d12, .sb-12d12 {
+.sb-left, .sb-1d12, .sb-1d12-large, .sb-1d12-medium, .sb-1d12-small, .sb-2d12, .sb-2d12-large, .sb-2d12-medium, .sb-2d12-small, .sb-3d12, .sb-3d12-large, .sb-3d12-medium, .sb-3d12-small, .sb-4d12, .sb-4d12-large, .sb-4d12-medium, .sb-4d12-small, .sb-5d12, .sb-5d12-large, .sb-5d12-medium, .sb-5d12-small, .sb-6d12, .sb-6d12-large, .sb-6d12-medium, .sb-6d12-small, .sb-7d12, .sb-7d12-large, .sb-7d12-medium, .sb-7d12-small, .sb-8d12, .sb-8d12-large, .sb-8d12-medium, .sb-8d12-small, .sb-9d12, .sb-9d12-large, .sb-9d12-medium, .sb-9d12-small, .sb-10d12, .sb-10d12-large, .sb-10d12-medium, .sb-10d12-small, .sb-11d12, .sb-11d12-large, .sb-11d12-medium, .sb-11d12-small, .sb-12d12, .sb-12d12-large, .sb-12d12-medium, .sb-12d12-small {
   float: left;
   display: block;
 }
@@ -607,61 +616,97 @@ article:not(:first-child) {
   border-color: #ecf0f1;
 }
 
-.sb-1d12 {
+.sb-1d12,
+.sb-1d12-large,
+.sb-1d12-medium,
+.sb-1d12-small {
   width: 8.33333%;
 }
 
-.sb-2d12 {
+.sb-2d12,
+.sb-2d12-large,
+.sb-2d12-medium,
+.sb-2d12-small {
   width: 16.66667%;
 }
 
-.sb-3d12 {
+.sb-3d12,
+.sb-3d12-large,
+.sb-3d12-medium,
+.sb-3d12-small {
   width: 25%;
 }
 
-.sb-4d12 {
+.sb-4d12,
+.sb-4d12-large,
+.sb-4d12-medium,
+.sb-4d12-small {
   width: 33.33333%;
 }
 
-.sb-5d12 {
+.sb-5d12,
+.sb-5d12-large,
+.sb-5d12-medium,
+.sb-5d12-small {
   width: 41.66667%;
 }
 
-.sb-6d12 {
+.sb-6d12,
+.sb-6d12-large,
+.sb-6d12-medium,
+.sb-6d12-small {
   width: 50%;
 }
 
-.sb-7d12 {
+.sb-7d12,
+.sb-7d12-large,
+.sb-7d12-medium,
+.sb-7d12-small {
   width: 58.33333%;
 }
 
-.sb-8d12 {
+.sb-8d12,
+.sb-8d12-large,
+.sb-8d12-medium,
+.sb-8d12-small {
   width: 66.66667%;
 }
 
-.sb-9d12 {
+.sb-9d12,
+.sb-9d12-large,
+.sb-9d12-medium,
+.sb-9d12-small {
   width: 75%;
 }
 
-.sb-10d12 {
+.sb-10d12,
+.sb-10d12-large,
+.sb-10d12-medium,
+.sb-10d12-small {
   width: 83.33333%;
 }
 
-.sb-11d12 {
+.sb-11d12,
+.sb-11d12-large,
+.sb-11d12-medium,
+.sb-11d12-small {
   width: 91.66667%;
 }
 
-.sb-12d12 {
+.sb-12d12,
+.sb-12d12-large,
+.sb-12d12-medium,
+.sb-12d12-small {
   width: 100%;
 }
 
-.sb-1d12, .sb-2d12, .sb-3d12, .sb-4d12, .sb-5d12, .sb-6d12, .sb-7d12, .sb-8d12, .sb-9d12, .sb-10d12, .sb-11d12, .sb-12d12 {
+.sb-1d12, .sb-1d12-large, .sb-1d12-medium, .sb-1d12-small, .sb-2d12, .sb-2d12-large, .sb-2d12-medium, .sb-2d12-small, .sb-3d12, .sb-3d12-large, .sb-3d12-medium, .sb-3d12-small, .sb-4d12, .sb-4d12-large, .sb-4d12-medium, .sb-4d12-small, .sb-5d12, .sb-5d12-large, .sb-5d12-medium, .sb-5d12-small, .sb-6d12, .sb-6d12-large, .sb-6d12-medium, .sb-6d12-small, .sb-7d12, .sb-7d12-large, .sb-7d12-medium, .sb-7d12-small, .sb-8d12, .sb-8d12-large, .sb-8d12-medium, .sb-8d12-small, .sb-9d12, .sb-9d12-large, .sb-9d12-medium, .sb-9d12-small, .sb-10d12, .sb-10d12-large, .sb-10d12-medium, .sb-10d12-small, .sb-11d12, .sb-11d12-large, .sb-11d12-medium, .sb-11d12-small, .sb-12d12, .sb-12d12-large, .sb-12d12-medium, .sb-12d12-small {
   position: relative;
   min-height: 1px;
   padding: 17px 15px;
 }
 
-.switch-1 .sb-1d12, .switch-1 .sb-2d12, .switch-1 .sb-3d12, .switch-1 .sb-4d12, .switch-1 .sb-5d12, .switch-1 .sb-6d12, .switch-1 .sb-7d12, .switch-1 .sb-8d12, .switch-1 .sb-9d12, .switch-1 .sb-10d12, .switch-1 .sb-11d12, .switch-1 .sb-12d12 {
+.switch-1 .sb-1d12, .switch-1 .sb-1d12-large, .switch-1 .sb-1d12-medium, .switch-1 .sb-1d12-small, .switch-1 .sb-2d12, .switch-1 .sb-2d12-large, .switch-1 .sb-2d12-medium, .switch-1 .sb-2d12-small, .switch-1 .sb-3d12, .switch-1 .sb-3d12-large, .switch-1 .sb-3d12-medium, .switch-1 .sb-3d12-small, .switch-1 .sb-4d12, .switch-1 .sb-4d12-large, .switch-1 .sb-4d12-medium, .switch-1 .sb-4d12-small, .switch-1 .sb-5d12, .switch-1 .sb-5d12-large, .switch-1 .sb-5d12-medium, .switch-1 .sb-5d12-small, .switch-1 .sb-6d12, .switch-1 .sb-6d12-large, .switch-1 .sb-6d12-medium, .switch-1 .sb-6d12-small, .switch-1 .sb-7d12, .switch-1 .sb-7d12-large, .switch-1 .sb-7d12-medium, .switch-1 .sb-7d12-small, .switch-1 .sb-8d12, .switch-1 .sb-8d12-large, .switch-1 .sb-8d12-medium, .switch-1 .sb-8d12-small, .switch-1 .sb-9d12, .switch-1 .sb-9d12-large, .switch-1 .sb-9d12-medium, .switch-1 .sb-9d12-small, .switch-1 .sb-10d12, .switch-1 .sb-10d12-large, .switch-1 .sb-10d12-medium, .switch-1 .sb-10d12-small, .switch-1 .sb-11d12, .switch-1 .sb-11d12-large, .switch-1 .sb-11d12-medium, .switch-1 .sb-11d12-small, .switch-1 .sb-12d12, .switch-1 .sb-12d12-large, .switch-1 .sb-12d12-medium, .switch-1 .sb-12d12-small {
   border-color: #ecf0f1;
 }
 
@@ -805,21 +850,6 @@ img.sb-smooth.sb-loaded {
   opacity: 1;
 }
 
-/*!
- * Tables component from Bootstrap
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*!
- * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=a0744555dfe793de02cdab0aa79944bf)
- * Config saved to config.json and https://gist.github.com/a0744555dfe793de02cdab0aa79944bf
- */
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1179,6 +1209,9 @@ table th[class*="col-"] {
   h1 {
     font-size: 2em;
   }
+  .sb-1d12-lage, .sb-2d12-large, .sb-3d12-large, .sb-4d12-large, .sb-5d12-large, .sb-6d12-large, .sb-7d12-large, .sb-8d12-large, .sb-9d12-large, .sb-10d12-large, .sb-11d12-large, .sb-12d12-large {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1112px) {
@@ -1191,7 +1224,7 @@ table th[class*="col-"] {
   .sb-10, .sb-20, .sb-30, .sb-40, .sb-50, .sb-60, .sb-70, .sb-80, .sb-90, .sb-100 {
     width: 100%;
   }
-  .sb-1d12, .sb-2d12, .sb-3d12, .sb-4d12, .sb-5d12, .sb-6d12, .sb-7d12, .sb-8d12, .sb-9d12, .sb-10d12, .sb-11d12, .sb-12d12 {
+  .sb-1d12-medium, .sb-1d12-large, .sb-2d12-medium, .sb-2d12-large, .sb-3d12-medium, .sb-3d12-large, .sb-4d12-medium, .sb-4d12-large, .sb-5d12-medium, .sb-5d12-large, .sb-6d12-medium, .sb-6d12-large, .sb-7d12-medium, .sb-7d12-large, .sb-8d12-medium, .sb-8d12-large, .sb-9d12-medium, .sb-9d12-large, .sb-10d12-medium, .sb-10d12-large, .sb-11d12-medium, .sb-11d12-large, .sb-12d12-medium, .sb-12d12-large {
     width: 100%;
   }
 }
@@ -1202,6 +1235,9 @@ table th[class*="col-"] {
   }
   h1 {
     font-size: 1em;
+  }
+  .sb-1d12-small, .sb-1d12-medium, .sb-1d12-large, .sb-2d12-small, .sb-2d12-medium, .sb-2d12-large, .sb-3d12-small, .sb-3d12-medium, .sb-3d12-large, .sb-4d12-small, .sb-4d12-medium, .sb-4d12-large, .sb-5d12-small, .sb-5d12-medium, .sb-5d12-large, .sb-6d12-small, .sb-6d12-medium, .sb-6d12-large, .sb-7d12-small, .sb-7d12-medium, .sb-7d12-large, .sb-8d12-small, .sb-8d12-medium, .sb-8d12-large, .sb-9d12-small, .sb-9d12-medium, .sb-9d12-large, .sb-10d12-small, .sb-10d12-medium, .sb-10d12-large, .sb-11d12-small, .sb-11d12-medium, .sb-11d12-large, .sb-12d12-small, .sb-12d12-medium, .sb-12d12-large {
+    width: 100%;
   }
 }
 
