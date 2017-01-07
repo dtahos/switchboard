@@ -13,3 +13,15 @@
 @media (max-width: 768px + $containerPadding *8) {
      @import'max768';
 }
+@media (min-width: 768px + $containerPadding *8) {
+     @import 'min768';
+}
+@media (min-width: 992px + $containerPadding *8) {
+     @import 'min992';
+}
+@media (min-width: 1200px + $containerPadding *8) {
+     @import 'min1200';
+}
+@media (min-width: 1400px + $containerPadding *8) {
+     @import 'min1440';
+}

@@ -27,28 +27,29 @@
     }
 }
 // d12 grid
+@mixin set-grid-12($class:'',$i:1, $list: ".#{$prefix}#{$i}d12-#{$class}") {
+    @if $class != '' {
+        $class: '-' + $class;
+    }
+    @for $i from(1 + 1) through 12 {
+        // TEMP FIX
+        @if($i == 2) {
+            .#{$prefix}1d12#{$class} {
+                width: (100% / (12 / 1 ));
+                float: left;
+                display: block;
+            }
+        }
+        .#{$prefix}#{$i}d12#{$class} {
+            width: (100% / (12 / $i ));
+            float: left;
+            display: block;
+        }
+    }
+}
 @mixin grid-12($i:1, $list: ".#{$prefix}#{$i}d12,.#{$prefix}#{$i}d12-large,.#{$prefix}#{$i}d12-medium,.#{$prefix}#{$i}d12-small") {
      @for $i from(1 + 1) through 12{
         $list: "#{$list}, .#{$prefix}#{$i}d12,.#{$prefix}#{$i}d12-large,.#{$prefix}#{$i}d12-medium,.#{$prefix}#{$i}d12-small";
-        // TEMP FIX
-        @if($i == 2) {
-            .#{$prefix}1d12,
-            .#{$prefix}1d12-large,
-            .#{$prefix}1d12-medium,
-            .#{$prefix}1d12-small {
-                width: (100% / (12 / 1 ));
-            }
-        }
-        .#{$prefix}#{$i}d12,
-        .#{$prefix}#{$i}d12-large,
-        .#{$prefix}#{$i}d12-medium,
-        .#{$prefix}#{$i}d12-small {
-            width: (100% / (12 / $i ));
-        }
-    }
-
-    #{$list} {
-        @extend .#{$prefix}left;
     }
 
     #{$list} {
