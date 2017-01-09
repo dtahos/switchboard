@@ -1,23 +1,20 @@
 //
 // Switchboard Grid
 // --------------------------------------------------
-
 //columns
 
 .#{$prefix}inner {
     padding-left: $containerPadding;
     padding-right: $containerPadding;
 }
-
-.#{$prefix}innerpost {
-    margin-top: 50px;
-}
-//container
+// containers
 
 .#{$parentPrefix}container {
+    max-width: 100%;
     padding-left: $containerPadding;
     padding-right: $containerPadding;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .#{$parentPrefix}row {
@@ -30,13 +27,34 @@
     padding-left: $containerPadding;
     padding-right: $containerPadding;
 }
+
+.#{$parentPrefix}container {
+    @include clearboth;
+}
+
+.#{$parentPrefix}row {
+    @include clearboth;
+
+    &.#{$prefix}nogap {
+        margin-left: 0;
+        margin-right: 0;
+
+        & > [class *="d12"] {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.#{$prefix}clear {
+    @include clearboth;
+}
 //soak
 
 .#{$prefix}soak {
     position: relative;
     margin: auto;
 }
-
 //i-center
 
 .#{$prefix}i-center {
@@ -47,24 +65,15 @@
 
 .#{$prefix}left {
     float: left;
-    display: block;
 }
 
 .#{$prefix}right {
     float: right;
+}
+// block
+
+.#{$prefix}block {
     display: block;
-}
-
-.#{$parentPrefix}container {
-    @include clearboth;
-}
-
-.#{$parentPrefix}row {
-    @include clearboth;
-}
-
-.#{$prefix}clear {
-    @include clearboth;
 }
 @include grid-100;
 @include grid-12;

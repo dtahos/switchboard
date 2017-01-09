@@ -3,7 +3,7 @@
  * ========================================================================*/
  + function($) {
 
-     var emptySpace = $('._emptyspace');
+     var emptySpace = $('.sb-emptyspace');
 
      emptySpace.each(function() {
          var thisEs = $(this),

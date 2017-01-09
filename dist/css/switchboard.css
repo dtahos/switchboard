@@ -498,14 +498,12 @@ article:not(:first-child) {
   padding-right: 15px;
 }
 
-.sb-innerpost {
-  margin-top: 50px;
-}
-
 .sb--container {
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sb--row {
@@ -517,26 +515,6 @@ article:not(:first-child) {
 .sb-col {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.sb-soak {
-  position: relative;
-  margin: auto;
-}
-
-.sb-i-center {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.sb-left {
-  float: left;
-  display: block;
-}
-
-.sb-right {
-  float: right;
-  display: block;
 }
 
 .sb--container:after, .sb--container:before {
@@ -557,6 +535,16 @@ article:not(:first-child) {
   clear: both;
 }
 
+.sb--row.sb-nogap {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.sb--row.sb-nogap > [class*="d12"] {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .sb-clear:after, .sb-clear:before {
   content: " ";
   display: table;
@@ -564,6 +552,28 @@ article:not(:first-child) {
 
 .sb-clear:after {
   clear: both;
+}
+
+.sb-soak {
+  position: relative;
+  margin: auto;
+}
+
+.sb-i-center {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.sb-left {
+  float: left;
+}
+
+.sb-right {
+  float: right;
+}
+
+.sb-block {
+  display: block;
 }
 
 .sb-10 {
@@ -629,73 +639,61 @@ article:not(:first-child) {
 .sb-1d12 {
   width: 8.33333%;
   float: left;
-  display: block;
 }
 
 .sb-2d12 {
   width: 16.66667%;
   float: left;
-  display: block;
 }
 
 .sb-3d12 {
   width: 25%;
   float: left;
-  display: block;
 }
 
 .sb-4d12 {
   width: 33.33333%;
   float: left;
-  display: block;
 }
 
 .sb-5d12 {
   width: 41.66667%;
   float: left;
-  display: block;
 }
 
 .sb-6d12 {
   width: 50%;
   float: left;
-  display: block;
 }
 
 .sb-7d12 {
   width: 58.33333%;
   float: left;
-  display: block;
 }
 
 .sb-8d12 {
   width: 66.66667%;
   float: left;
-  display: block;
 }
 
 .sb-9d12 {
   width: 75%;
   float: left;
-  display: block;
 }
 
 .sb-10d12 {
   width: 83.33333%;
   float: left;
-  display: block;
 }
 
 .sb-11d12 {
   width: 91.66667%;
   float: left;
-  display: block;
 }
 
 .sb-12d12 {
   width: 100%;
   float: left;
-  display: block;
 }
 
 .sb-typo-left {
@@ -1197,6 +1195,9 @@ table th[class*="col-"] {
   h1 {
     font-size: 2em;
   }
+  .sb-hide-large {
+    display: none;
+  }
 }
 
 @media (max-width: 1112px) {
@@ -1209,6 +1210,9 @@ table th[class*="col-"] {
   .sb-10, .sb-20, .sb-30, .sb-40, .sb-50, .sb-60, .sb-70, .sb-80, .sb-90, .sb-100 {
     width: 100%;
   }
+  .sb-hide-medium {
+    display: none;
+  }
 }
 
 @media (max-width: 888px) {
@@ -1218,68 +1222,59 @@ table th[class*="col-"] {
   h1 {
     font-size: 1em;
   }
+  .sb-hide-small {
+    display: none;
+  }
 }
 
 @media (min-width: 888px) {
   .sb-1d12-small {
     width: 8.33333%;
     float: left;
-    display: block;
   }
   .sb-2d12-small {
     width: 16.66667%;
     float: left;
-    display: block;
   }
   .sb-3d12-small {
     width: 25%;
     float: left;
-    display: block;
   }
   .sb-4d12-small {
     width: 33.33333%;
     float: left;
-    display: block;
   }
   .sb-5d12-small {
     width: 41.66667%;
     float: left;
-    display: block;
   }
   .sb-6d12-small {
     width: 50%;
     float: left;
-    display: block;
   }
   .sb-7d12-small {
     width: 58.33333%;
     float: left;
-    display: block;
   }
   .sb-8d12-small {
     width: 66.66667%;
     float: left;
-    display: block;
   }
   .sb-9d12-small {
     width: 75%;
     float: left;
-    display: block;
   }
   .sb-10d12-small {
     width: 83.33333%;
     float: left;
-    display: block;
   }
   .sb-11d12-small {
     width: 91.66667%;
     float: left;
-    display: block;
   }
   .sb-12d12-small {
     width: 100%;
     float: left;
-    display: block;
   }
 }
 
@@ -1287,62 +1282,50 @@ table th[class*="col-"] {
   .sb-1d12-medium {
     width: 8.33333%;
     float: left;
-    display: block;
   }
   .sb-2d12-medium {
     width: 16.66667%;
     float: left;
-    display: block;
   }
   .sb-3d12-medium {
     width: 25%;
     float: left;
-    display: block;
   }
   .sb-4d12-medium {
     width: 33.33333%;
     float: left;
-    display: block;
   }
   .sb-5d12-medium {
     width: 41.66667%;
     float: left;
-    display: block;
   }
   .sb-6d12-medium {
     width: 50%;
     float: left;
-    display: block;
   }
   .sb-7d12-medium {
     width: 58.33333%;
     float: left;
-    display: block;
   }
   .sb-8d12-medium {
     width: 66.66667%;
     float: left;
-    display: block;
   }
   .sb-9d12-medium {
     width: 75%;
     float: left;
-    display: block;
   }
   .sb-10d12-medium {
     width: 83.33333%;
     float: left;
-    display: block;
   }
   .sb-11d12-medium {
     width: 91.66667%;
     float: left;
-    display: block;
   }
   .sb-12d12-medium {
     width: 100%;
     float: left;
-    display: block;
   }
 }
 
@@ -1350,62 +1333,50 @@ table th[class*="col-"] {
   .sb-1d12-large {
     width: 8.33333%;
     float: left;
-    display: block;
   }
   .sb-2d12-large {
     width: 16.66667%;
     float: left;
-    display: block;
   }
   .sb-3d12-large {
     width: 25%;
     float: left;
-    display: block;
   }
   .sb-4d12-large {
     width: 33.33333%;
     float: left;
-    display: block;
   }
   .sb-5d12-large {
     width: 41.66667%;
     float: left;
-    display: block;
   }
   .sb-6d12-large {
     width: 50%;
     float: left;
-    display: block;
   }
   .sb-7d12-large {
     width: 58.33333%;
     float: left;
-    display: block;
   }
   .sb-8d12-large {
     width: 66.66667%;
     float: left;
-    display: block;
   }
   .sb-9d12-large {
     width: 75%;
     float: left;
-    display: block;
   }
   .sb-10d12-large {
     width: 83.33333%;
     float: left;
-    display: block;
   }
   .sb-11d12-large {
     width: 91.66667%;
     float: left;
-    display: block;
   }
   .sb-12d12-large {
     width: 100%;
     float: left;
-    display: block;
   }
 }
 

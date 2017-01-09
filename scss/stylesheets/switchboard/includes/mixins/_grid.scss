@@ -37,13 +37,11 @@
             .#{$prefix}1d12#{$class} {
                 width: (100% / (12 / 1 ));
                 float: left;
-                display: block;
             }
         }
         .#{$prefix}#{$i}d12#{$class} {
             width: (100% / (12 / $i ));
             float: left;
-            display: block;
         }
     }
 }
