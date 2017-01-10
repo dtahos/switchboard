@@ -2,13 +2,11 @@
  * Switchboard v0.5
  * Licensed under GNU GENERAL PUBLIC LICENSE VERSION 3, 29 June 2007
  * ============================================================================
- * Tables component from Bootstrap
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2017 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
+  line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -19,38 +17,37 @@ body {
 
 article,
 aside,
-details,
-figcaption,
-figure,
 footer,
 header,
-main,
-menu,
 nav,
-section,
-summary {
+section {
   display: block;
 }
 
-audio,
-canvas,
-progress,
-video {
-  display: inline-block;
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-audio:not([controls]) {
-  display: none;
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
   height: 0;
+  overflow: visible;
 }
 
-progress {
-  vertical-align: baseline;
-}
-
-template,
-[hidden] {
-  display: none;
+pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
 }
 
 a {
@@ -64,7 +61,7 @@ a:hover {
 }
 
 abbr[title] {
-  border-bottom: none;
+  border-bottom: 0;
   text-decoration: underline;
   text-decoration: underline dotted;
 }
@@ -79,13 +76,15 @@ strong {
   font-weight: bolder;
 }
 
-dfn {
-  font-style: italic;
+code,
+kbd,
+samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+dfn {
+  font-style: italic;
 }
 
 mark {
@@ -113,6 +112,16 @@ sup {
   top: -0.5em;
 }
 
+audio,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
 img {
   border-style: none;
 }
@@ -121,34 +130,15 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-figure {
-  margin: 1em 40px;
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
-
 button,
 input,
+optgroup,
 select,
 textarea {
-  font: inherit;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
   margin: 0;
-}
-
-optgroup {
-  font-weight: bold;
 }
 
 button,
@@ -161,25 +151,25 @@ select {
   text-transform: none;
 }
 
-button,
-html [type="button"],
 [type="reset"],
-[type="submit"] {
+[type="submit"],
+button,
+html [type="button"] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type="submit"]:-moz-focusring,
+button:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -196,6 +186,11 @@ legend {
   max-width: 100%;
   padding: 0;
   white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 textarea {
@@ -223,14 +218,30 @@ textarea {
   -webkit-appearance: none;
 }
 
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-}
-
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   font: inherit;
+}
+
+details,
+menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
 }
 
 *,
@@ -262,31 +273,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
   margin: 0;
-}
-
-h1 {
-  font-size: 3em;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
 }
 
 article:not(:first-child) {
@@ -310,6 +298,115 @@ article:not(:first-child) {
 .sb--wrapper {
   position: relative;
   min-height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+h6 {
+  font-size: 0.85714rem;
+  font-weight: lighter;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #8BC34A;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="url"],
+textarea {
+  border: #303030 solid 2px;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background: transparent;
+  color: #303030;
+  border: #303030 2px solid;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+button:focus, button:hover,
+input[type="button"]:focus,
+input[type="button"]:hover,
+input[type="reset"]:focus,
+input[type="reset"]:hover,
+input[type="submit"]:focus,
+input[type="submit"]:hover {
+  border-color: #636363;
+  color: #636363;
+}
+
+textarea {
+  resize: vertical;
+}
+
+blockquote,
+q {
+  quotes: "" "";
+}
+
+blockquote {
+  border-left: 4px solid #4a4a4a;
+  color: #636363;
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.66667;
+  margin: 0 0 1.25rem;
+  padding-left: 1.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+hr {
+  border-color: silver;
+  border-style: solid;
+}
+
+pre {
+  overflow: auto;
+  background: #efefef;
+  border-radius: 4px;
+  padding: 10px;
+  border: #cccbcb solid 1px;
 }
 
 .switch-1 {
@@ -836,6 +933,7 @@ img.sb-smooth.sb-loaded {
   opacity: 1;
 }
 
+/*! Table component from Bootstrap v3.3.7 | MIT License | http://getbootstrap.com */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -1183,17 +1281,11 @@ table th[class*="col-"] {
   .sb--container.sb--boxed {
     width: 1200px;
   }
-  h1 {
-    font-size: 3em;
-  }
 }
 
 @media (max-width: 1320px) {
   .sb--container.sb--boxed {
     width: 992px;
-  }
-  h1 {
-    font-size: 2em;
   }
   .sb-hide-large {
     display: none;
@@ -1203,9 +1295,6 @@ table th[class*="col-"] {
 @media (max-width: 1112px) {
   .sb--container.sb--boxed {
     width: 768px;
-  }
-  h1 {
-    font-size: 1.5em;
   }
   .sb-10, .sb-20, .sb-30, .sb-40, .sb-50, .sb-60, .sb-70, .sb-80, .sb-90, .sb-100 {
     width: 100%;
@@ -1218,9 +1307,6 @@ table th[class*="col-"] {
 @media (max-width: 888px) {
   .sb--container.sb--boxed {
     width: 100%;
-  }
-  h1 {
-    font-size: 1em;
   }
   .sb-hide-small {
     display: none;

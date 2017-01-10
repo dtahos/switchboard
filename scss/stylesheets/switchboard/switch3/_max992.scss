@@ -2,10 +2,8 @@
     width: 768px;
 }
 
-h1 {
-    font-size: $relFontSize + 0.5;
-}
 $list: ".#{$prefix}10";
+
 @for $i from(1 + 1) through 10 {
     $list: "#{$list}, .#{$prefix}#{$i}0";
 }
@@ -14,6 +12,6 @@ $list: ".#{$prefix}10";
     width: 100%;
 }
 
-.sb-hide-medium{
+.sb-hide-medium {
     display: none;
 }

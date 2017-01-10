@@ -1,0 +1,103 @@
+h1 {
+    font-size: $baseFontSize;
+}
+
+h2 {
+    font-size: $baseFontSize / 1.5;
+}
+
+h3 {
+    font-size: $baseFontSize / 2;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: $baseFontSize / 2.5;
+    font-weight: normal;
+}
+
+h5 {
+    font-size: $baseFontSize / 3;
+    font-weight: lighter;
+}
+
+h6 {
+    font-size: $baseFontSize / 3.5;
+    font-weight: lighter;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: $themeColor;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="search"],
+input[type="text"],
+input[type="url"],
+textarea {
+    border: $darkColor solid 2px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    background: transparent;
+    color: $darkColor;
+    border: $darkColor 2px solid;
+    padding: 4px 10px;
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+        border-color: lighten($darkColor, 20%);
+        color: lighten($darkColor, 20%);
+    }
+}
+
+textarea {
+    resize: vertical;
+}
+
+blockquote,
+q {
+    quotes: "" "";
+}
+
+blockquote {
+    border-left: 4px solid lighten($darkColor, 10%);
+    color: lighten($darkColor, 20%);
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: $lineHeight;
+    margin: 0 0 1.25rem;
+    padding-left: 1.5rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+hr {
+    border-color: silver;
+    border-style: solid;
+}
+
+pre {
+    overflow: auto;
+    background: #efefef;
+    border-radius: 4px;
+    padding: 10px;
+    border: #cccbcb solid 1px;
+}

@@ -1,4 +1,5 @@
-// Switchboard Init 
+// Switchboard Init
+
 *,
 *::after,
 *::before {
@@ -28,32 +29,10 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
     margin: 0;
 }
 
-h1 {
-    font-size: 3em;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
 article:not(:first-child) {
     margin-top: 3em;
 }
@@ -75,3 +54,7 @@ article:not(:first-child) {
     position: relative;
     min-height: 100%;
 }
+
+// Import Basic Elements Css
+//==============================================================================
+@import "basicElements";

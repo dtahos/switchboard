@@ -8,6 +8,7 @@
 * Imported Bootstrap's tables component
 * Added 3 more Responsive queries for grid system
 * Minor Bugfixes
+* Updated normalize.css to v5.0.0
 
 # 0.0.5
 * Fixed issue with img tag
