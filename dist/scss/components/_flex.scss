@@ -1,1 +1,48 @@
+//
 // Flex
+// -----------------------------------------------------------------------------
+
+// flex vendors
+@mixin flex() {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+// flexDirection vendors
+@mixin flexDirection($value) {
+    $orientation: '';
+    $direction: '';
+     @if($value == 'column' or $value == 'column-reverse'){
+        $orientation: 'vertical';
+        @if($value == 'column-reverse') {
+            $direction: 'reverse';
+        }
+        @else {
+            $direction: 'normal';
+        }
+    }
+    @elseif($value == 'row' or $value == 'row-reverse') {
+        $orientation: 'horizontal';
+        @if($value == 'row-reverse') {
+            $direction: 'reverse';
+        }
+        @else {
+            $direction: 'normal';
+        }
+    }
+    -webkit-box-orient: #{$orientation};
+    -webkit-box-direction: #{$direction};
+    -webkit-flex-direction: #{$value};
+    -moz-box-orient: #{$orientation};
+    -moz-box-direction: #{$direction};
+    -ms-flex-direction: #{$value};
+    flex-direction: #{$value};
+}
+
+
+@mixin makeFlex() {
+     @include flex();
+}

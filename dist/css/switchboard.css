@@ -283,7 +283,6 @@ article:not(:first-child) {
 
 .sb-SOFTLOAD {
   opacity: 0;
-  -webkit-transition: 1s;
   transition: 1s;
 }
 
@@ -547,6 +546,8 @@ pre {
 
 .sb-imager .sb-description {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
 }
@@ -873,6 +874,8 @@ pre {
 
 .sb-f-center, .sb-a-center {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
@@ -900,25 +903,14 @@ pre {
   vertical-align: middle;
 }
 
-img.sb-smooth {
-  opacity: 0;
-  -webkit-transition-property: opacity;
-  transition-property: opacity;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
-}
-
-img.sb-smooth.sb-loaded {
-  opacity: 1;
-}
-
 .sb--header.sb-absolute {
   position: absolute;
-  width: 100%;
   top: 0;
   left: 0;
+  bottom: auto;
   right: 0;
   z-index: 9;
+  width: 100%;
 }
 
 .sb--header.sb-stuck {
@@ -1169,7 +1161,7 @@ table th[class*="col-"] {
   min-height: 0.01%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 887px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -1277,13 +1269,13 @@ table th[class*="col-"] {
   height: 100%;
 }
 
-@media (max-width: 1560px) {
+@media (max-width: 1559px) {
   .sb--container.sb--boxed {
     width: 1200px;
   }
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1319px) {
   .sb--container.sb--boxed {
     width: 992px;
   }
@@ -1292,7 +1284,7 @@ table th[class*="col-"] {
   }
 }
 
-@media (max-width: 1112px) {
+@media (max-width: 1111px) {
   .sb--container.sb--boxed {
     width: 768px;
   }
@@ -1304,7 +1296,7 @@ table th[class*="col-"] {
   }
 }
 
-@media (max-width: 888px) {
+@media (max-width: 887px) {
   .sb--container.sb--boxed {
     width: 100%;
   }
@@ -1486,7 +1478,9 @@ table th[class*="col-"] {
   display: block;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: auto;
+  bottom: auto;
+  right: 0;
   width: 100%;
   height: 2px;
   background-color: black;
@@ -1503,11 +1497,12 @@ table th[class*="col-"] {
 
 .sb-menu.sb-fixed {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
+  bottom: auto;
   right: 0;
   z-index: 999;
+  width: 100%;
   background: white;
 }
 
@@ -1533,4 +1528,19 @@ table th[class*="col-"] {
 
 .sb-anim.sb-animtrig.sb-fade {
   opacity: 1;
+  -webkit-transition: opacity 0.5s 0s ease;
+  -o-transition: opacity 0.5s 0s ease;
+  -moz-transition: opacity 0.5s 0s ease;
+  transition: opacity 0.5s 0s ease;
+  will-change: opacity;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }

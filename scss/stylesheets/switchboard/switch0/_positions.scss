@@ -19,7 +19,7 @@
 
 .#{$prefix}a-center{
     @extend .#{$prefix}f-center;
-    @include absolute-full;
+    @include makePosition();
 }
 
 .#{$prefix}i-center{

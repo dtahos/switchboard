@@ -6,7 +6,7 @@ if (typeof jQuery === 'undefined') {
     throw new Error('Hello! Switchboard needs jQuery to run its javascript!');
 } else {
     // THE VERSION
-    console.log('%cSWITCHBOARD v0.5(dev)', 'background-color:black;font-size:15px;color:#8BC34A;border-left:solid 5px; border-right:solid 5px #8BC34A; #8BC34A;padding:5px 10px;');
+    console.log('%cSWITCHBOARD v0.5.1', 'background-color:black;font-size:15px;color:#8BC34A;border-left:solid 5px; #8BC34A;padding:5px;line-height:2;');
 }
 
 /* ========================================================================
@@ -96,25 +96,6 @@ if (typeof jQuery === 'undefined') {
         e.preventDefault();
         $(this).toggleClass('.sb-opened');
         $(this).siblings('.sb-reveal').slideToggle("fast");
-    });
-
-}(jQuery);
-
-/* ========================================================================
- * Switchboard: Smooth Image Load
- * ========================================================================*/
-+ function($) {
-
-    $('img').each(function() {
-
-        var that = $(this);
-
-        if (that.hasClass('.sb-smooth')) {
-            that.load(function() {
-                that.addClass('.sb-loaded');
-            });
-        }
-
     });
 
 }(jQuery);

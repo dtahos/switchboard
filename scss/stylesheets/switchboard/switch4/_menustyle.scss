@@ -16,9 +16,7 @@
         &:after {
             content: '';
             display: block;
-            position: absolute;
-            top: 100%;
-            left: 0;
+            @include makePosition('absolute',100%,auto,auto,0);
             width: 100%;
             height: 2px;
             background-color: black;
@@ -33,12 +31,8 @@
     }
 
     &.#{$prefix}fixed {
-        position: fixed;
+        @include makePosition('fixed',0,0,auto,0,false,false,999);
         width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 999;
         background: white;
     }
 }

@@ -1,5 +1,9 @@
 # Changelog
 
+#0.5.1
+* Dropped smoothimages
+* Minor bug fixes
+
 #0.5
 * New class prefix
 * Changes of typography in switch0
@@ -7,7 +11,7 @@
 * Switchgear is now part of switchboard core
 * Imported Bootstrap's tables component
 * Added 3 more Responsive queries for grid system
-* Minor Bugfixes
+* Minor bug fixes
 * Updated normalize.css to v5.0.0
 
 # 0.0.5

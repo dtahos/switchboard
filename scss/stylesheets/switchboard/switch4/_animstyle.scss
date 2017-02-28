@@ -2,6 +2,7 @@
     &.#{$prefix}animtrig {
         &.#{$prefix}fade {
             opacity: 1;
+            @include makeTransition('opacity',0.5s,0s);
         }
     }
 }

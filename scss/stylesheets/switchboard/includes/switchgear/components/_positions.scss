@@ -1,6 +1,6 @@
 // Positions
-@mixin makePosition($position:absolute,$top:null,$left:null,$bottom:null,$right:null,$margin:false,$fullscreen:false) {
-    position: $position;
+@mixin makePosition($position:absolute, $top:null, $left:null, $bottom:null, $right:null, $margin:false, $fullscreen:false, $z_index:false) {
+    position: #{$position};
     @if $position == absolute or $position == relative or $position == fixed {
          @if $top == null or $left == null or $bottom == null or $right == null{
             $fullscreen: true;
@@ -16,5 +16,8 @@
     }
     @if $margin {
         margin: auto;
+    }
+    @if $z_index != false{
+        z-index: $z_index;
     }
 }

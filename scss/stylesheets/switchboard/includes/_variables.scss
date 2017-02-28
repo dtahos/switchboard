@@ -16,3 +16,10 @@ $themeColor:#8BC34A;
 $darkColor:#303030;
 $textcolor: white;
 $backgroundcolor: #3498db;
+
+
+// Container Width
+$sm: 768px + $containerPadding * 8;
+$md: 992px + $containerPadding * 8;
+$lg: 1200px + $containerPadding * 8;
+$xl: 1440px + $containerPadding * 8;

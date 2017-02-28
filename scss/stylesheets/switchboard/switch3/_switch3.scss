@@ -1,27 +1,27 @@
 //
 // Responsive switch (switch3)
 // --------------------------------------------------
-@media (max-width: 1440px + $containerPadding *8) {
+@media (max-width: $xl - 1) {
      @import'max1440';
 }
-@media (max-width: 1200px + $containerPadding *8) {
+@media (max-width: $lg - 1) {
      @import'max1200';
 }
-@media (max-width: 992px + $containerPadding *8) {
+@media (max-width: $md - 1) {
      @import'max992';
 }
-@media (max-width: 768px + $containerPadding *8) {
+@media (max-width: $sm - 1) {
      @import'max768';
 }
-@media (min-width: 768px + $containerPadding *8) {
+@media (min-width: $sm) {
      @import 'min768';
 }
-@media (min-width: 992px + $containerPadding *8) {
+@media (min-width: $md) {
      @import 'min992';
 }
-@media (min-width: 1200px + $containerPadding *8) {
+@media (min-width: $lg) {
      @import 'min1200';
 }
-@media (min-width: 1400px + $containerPadding *8) {
+@media (min-width: $xl) {
      @import 'min1440';
 }

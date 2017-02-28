@@ -1,11 +1,7 @@
 .#{$parentPrefix}header {
     &.#{$prefix}absolute {
-        position: absolute;
+        @include makePosition('absolute',0,0,auto,0,false,false,9);
         width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 9;
     }
     &.#{$prefix}stuck {
         position: fixed;

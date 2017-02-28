@@ -8,8 +8,7 @@
     },
     "devDependencies": {
         "gulp": "*",
-        "gulp-autoprefixer": "*",
-        "gulp-load-plugins": "^1.3.0",
+        "gulp-load-plugins": "*",
         "gulp-plumber": "*",
         "gulp-rename": "*",
         "gulp-sass": "*",

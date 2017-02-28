@@ -43,7 +43,6 @@ gulp.task('styles', function() {
             noCache: true,
             outputStyle: 'expanded'
         }).on('error', plugins.sass.logError))
-        .pipe(plugins.autoprefixer())
         .pipe(gulp.dest(cssDest))
         .pipe(plugins.cleanCss({
             compatibility: 'ie8'

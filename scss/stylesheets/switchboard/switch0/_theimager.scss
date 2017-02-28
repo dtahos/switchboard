@@ -1,6 +1,6 @@
 .#{$prefix}imager {
     .#{$prefix}image-overlay{
-        @include absolute-full;
+        @include makePosition();
     }
     .#{$prefix}theimage {
         width: 100%;

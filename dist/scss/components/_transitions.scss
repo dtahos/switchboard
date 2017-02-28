@@ -4,6 +4,9 @@
         @include getError( '_transitions.scss', 'Not given transition property.');
     }
     @else {
+        -webkit-transition: prepareProperties($properties," #{$duration} #{$delay} #{$timing}");
+        -o-transition: prepareProperties($properties," #{$duration} #{$delay} #{$timing}");
+        -moz-transition: prepareProperties($properties," #{$duration} #{$delay} #{$timing}");
         transition: prepareProperties($properties," #{$duration} #{$delay} #{$timing}");
         will-change: prepareProperties($properties);
     }

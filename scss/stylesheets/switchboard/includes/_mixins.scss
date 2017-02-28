@@ -1,19 +1,3 @@
 @import "mixins/grid";
 @import "mixins/flex";
 @import "mixins/clear";
-@mixin absolute-full {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-}
-@mixin position($position:static, $top:initial, $bottom:initial, $left:initial, $right:initial) {
-    position: $position;
-    top: $top;
-    bottom: $bottom;
-    left: $left;
-    right: $right;
-}
